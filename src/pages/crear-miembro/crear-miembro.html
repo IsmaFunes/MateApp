@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Crear miembro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="miembro.nombre"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label stacked>Descripcion</ion-label>
+      <ion-input type="text" [(ngModel)]="miembro.descripcion"></ion-input>
+    </ion-item>
+  
+    <button ion-button block (click)="crear()">Agregar</button>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Sorteo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngIf="miembroElegido">
+        <ion-card-header>
+          {{miembroElegido.nombre}}, a vos te toca
+        </ion-card-header>
+        <ion-card-content>
+          {{miembroElegido.descripcion}}
+        </ion-card-content>
+      </ion-card>
+  <button ion-button block color="danger" (click)="sortear()">Sortear</button>
+
+</ion-content>
